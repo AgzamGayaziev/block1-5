@@ -80,8 +80,9 @@
         <!-- If we need pagination -->
         <div class="section__paginator swiper-pagination"></div>
         <button class="show-all" id="btn-show-all">
+            <img class="show-all__arrow" src="img/read-more/icon.svg">
             <span class="show-all__title-show">Показать все</span>
-          <!-- <span class="show-all__title-hide">Скрыть</span> -->
+            <span class="show-all__title-hide">Скрыть</span>
         </button>
     </div>
       
@@ -91,16 +92,16 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
-        if(document.body.clientWidth<750) {
+        
        
             var mySwiper = new Swiper('.swiper-container', {
             // Optional parameters
-
             // If we need pagination
             pagination: {
                 el: '.swiper-pagination',
+        
             },
-
+            
             // Navigation arrows
             navigation: {
                 nextEl: '.swiper-button-next',
@@ -112,7 +113,7 @@
                 el: '.swiper-scrollbar',
             },
             })
-        }        
+               
     </script>
     <script src="section.js"></script>
     </body>

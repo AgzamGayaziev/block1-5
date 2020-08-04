@@ -1,22 +1,19 @@
 
  if(document.body.clientWidth>750) {
-let list = document.querySelector('.section__list');
-let btnShowHide = document.querySelector('.show-all');
+const listBrands = document.querySelector('.section__list');
+const btnShowHide = document.querySelector('.show-all');
+const nameButtonShow = btnShowHide.querySelector('.show-all__title-show');
+const nameButtonHide = btnShowHide.querySelector('.show-all__title-hide');
+const imageArrowButton = btnShowHide.querySelector('.show-all__arrow')
 let click1 = 0;
 
-list.classList.remove('swiper-wrapper');
-let titleButton = btnShowHide.querySelector('.show-all__title-show')
+listBrands.classList.remove("swiper-wrapper");
 
 btnShowHide.addEventListener('click',function(){  
-     if (click1 == 0){
-        list.setAttribute('height','400px');
-        click1++;
-        titleButton.firstChild.replaceWith("Скрыть");
-     }else {
-        list.setAttribute('height','160px');
-        click1--;
-        titleButton.firstChild.replaceWith("Показать все");
-     
-        }
+   listBrands.classList.toggle('section__list--opened');
+   nameButtonShow.classList.toggle('show-all__title-show--hide');
+   nameButtonHide.classList.toggle('show-all__title-show');
+   imageArrowButton.classList.toggle('show-all__arrow--rotate');
 })
+
 }
