@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Блок 1.5</title>
+        <meta charset = "utf-8">
+        <meta name = "viewport" content="width=device-width, initial-scale=1">
+        <link rel = "stylesheet" type="text/css" href="section-style.css">
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    </head>
+    <body class="section">
+       
+        <div class = "section__header">
+            <h2 class = "section__title">Ремонт техники различных брендов</h2>
+        </div>  
+       
+   
+   
+        <!-- Slider main container -->
+        <div class="section__content swiper-container">
+        <!-- Additional required wrapper -->
+        <ul class="section__list swiper-wrapper">
+        <!-- Slides -->
+            <li class="section__item swiper-slide">
+                <a class = "section__link" href="#">
+                    <img class ="swiper__pic-logo" src="img/Bitmap.svg" alt="Lenovo">
+                </a>
+            </li>
+            <li class = "section__item swiper-slide">
+                <a class = "section__link" href="#">
+                    <img class ="services__pic-logo" src="img/samsung.svg" alt="Samsung">
+                </a>
+            </li>
+            <li class = "section__item swiper-slide">
+                <a class = "section__link" href="#">
+                    <img class ="services__pic-logo" src="img/apple.svg" alt="Apple">
+                </a>
+            </li>
+            <li class = "section__item swiper-slide">
+                <a class = "section__link" href="#">
+                    <img class ="services__pic-logo" src="img/ViewSonic.svg" alt="ViewSonic">
+                </a>
+            </li>
+            <li class = "section__item swiper-slide">
+                <a class = "section__link" href="#">
+                    <img class ="services__pic-logo" src="img/Bosh.svg" alt="Bosh">
+                </a>
+            </li>
+            <li class = "section__item swiper-slide">
+                <a class = "section__link" href="#">
+                    <img class ="services__pic-logo" src="img/hp.svg" alt="HP">
+                </a>
+            </li>
+            <li class = "section__item swiper-slide">
+                <a class = "section__link" href="#">
+                    <img class ="services__pic-logo" src="img/acer.svg" alt="Acer">
+                </a>
+            </li>
+            <li class = "section__item swiper-slide">
+                <a class = "section__link" href="#">
+                    <img class ="services__pic-logo" src="img/sony.svg" alt="Sony">
+                </a>
+            </li>
+            <li class = "section__item swiper-slide">
+                <a class = "section__link" href="#">
+                    <img class ="services__pic-logo" src="img/Bitmap.svg" alt="Lenovo">
+                </a>
+            </li>
+            <li class = "section__item swiper-slide">
+                <a class = "section__link" href="#">
+                    <img class ="services__pic-logo" src="img/samsung.svg" alt="Samsung">
+                </a>
+            </li>
+            <li class = "section__item swiper-slide">
+                <a class = "section__link" href="#">
+                    <img class ="services__pic-logo" src="img/apple.svg" alt="Apple">
+                </a>
+            </li>
+        </ul>
+        <!-- If we need pagination -->
+        <div class="section__paginator swiper-pagination"></div>
+        <button class="show-all" id="btn-show-all">
+            <span class="show-all__title-show">Показать все</span>
+          <!-- <span class="show-all__title-hide">Скрыть</span> -->
+        </button>
+    </div>
+      
+
+
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        if(document.body.clientWidth<750) {
+       
+            var mySwiper = new Swiper('.swiper-container', {
+            // Optional parameters
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+            })
+        }        
+    </script>
+    <script src="section.js"></script>
+    </body>
+</html>
